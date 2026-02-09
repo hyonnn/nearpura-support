@@ -4,5 +4,5 @@ NearPura（ニアプラ）アプリのサポートページ・プライバシー
 
 GitHub Pagesで公開しています。
 
-- サポートページ: https://nearpura.app
-- プライバシーポリシー: https://nearpura.app/privacy.html
+- サポートページ: https://hyonnn.github.io/nearpura-support/
+- プライバシーポリシー: https://hyonnn.github.io/nearpura-support/privacy.html
