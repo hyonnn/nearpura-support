@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ニアプラ - プライバシーポリシー</title>
+  <style>
+    :root {
+      --primary-green: #2ebf8c;
+      --primary-teal: #00a6a6;
+      --bg: #f8fafb;
+      --text: #1a1a2e;
+      --text-secondary: #555;
+      --card-bg: #fff;
+      --border: #e0e0e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --text: #e8e8e8;
+        --text-secondary: #aaa;
+        --card-bg: #1a1d28;
+        --border: #2a2d38;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary-green), var(--primary-teal));
+      padding: 48px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .header p { font-size: 1rem; opacity: 0.9; }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+      color: var(--primary-teal);
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .card p, .card li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .card ul { padding-left: 20px; }
+    .card li { margin-bottom: 8px; }
+    a { color: var(--primary-teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.9);
+      font-weight: 500;
+      padding: 8px 16px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+    }
+    .updated {
+      text-align: right;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+    }
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>ニアプラ</h1>
+    <p>プライバシーポリシー</p>
+    <div class="nav-links">
+      <a href="index.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="updated">最終更新日: 2025年2月10日</p>
+
+    <div class="card">
+      <h2>はじめに</h2>
+      <p>ニアプラ（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーでは、本アプリにおける情報の取り扱いについて説明します。</p>
+    </div>
+
+    <div class="card">
+      <h2>収集する情報</h2>
+
+      <h3>1. 位置情報</h3>
+      <p>本アプリは、周辺店舗の検索のためにデバイスの位置情報を使用します。位置情報はデバイス上でのみ処理され、外部サーバーに送信されることはありません。</p>
+
+      <h3>2. 検索履歴</h3>
+      <p>本アプリは、ユーザーの検索履歴（商品名、検索日時、結果）をデバイス内にローカル保存します。この情報は外部に送信されません。ユーザーはアプリ内の設定からいつでも履歴を削除できます。</p>
+
+      <h3>3. APIキー</h3>
+      <p>本アプリは、価格チェック機能のためにユーザーが入力したGoogle Gemini APIキーをデバイスのキーチェーンに安全に保存します。APIキーはGoogle Gemini APIへのリクエスト時にのみ使用され、それ以外の目的で使用されることはありません。</p>
+    </div>
+
+    <div class="card">
+      <h2>外部サービスとの通信</h2>
+
+      <h3>1. Google Gemini API</h3>
+      <p>本アプリは、価格情報の取得のためにGoogle Gemini APIと通信します。この通信には、ユーザーが入力した商品名および選択した店舗情報が含まれます。Google Gemini APIの利用にはGoogleのプライバシーポリシーが適用されます。</p>
+
+      <h3>2. Apple Maps</h3>
+      <p>本アプリは、地図表示および店舗検索のためにApple Mapsを使用します。Apple Mapsの利用にはAppleのプライバシーポリシーが適用されます。</p>
+    </div>
+
+    <div class="card">
+      <h2>データの保存と管理</h2>
+      <ul>
+        <li>本アプリは独自のサーバーを持たず、ユーザーデータを外部サーバーに保存しません。</li>
+        <li>すべてのデータはユーザーのデバイス内にローカル保存されます。</li>
+        <li>APIキーはiOSのキーチェーンを使用して暗号化保存されます。</li>
+        <li>アプリを削除すると、保存されたすべてのデータが削除されます。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>第三者への情報提供</h2>
+      <p>本アプリは、上記の外部サービスとの通信を除き、ユーザーの個人情報を第三者に提供、販売、共有することはありません。</p>
+    </div>
+
+    <div class="card">
+      <h2>お子様のプライバシー</h2>
+      <p>本アプリは、13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+    </div>
+
+    <div class="card">
+      <h2>プライバシーポリシーの変更</h2>
+      <p>本プライバシーポリシーは、必要に応じて更新される場合があります。重要な変更がある場合は、本ページにて通知します。</p>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>本プライバシーポリシーに関するご質問がございましたら、以下のメールアドレスまでお問い合わせください。</p>
+      <p style="margin-top: 12px;"><a href="mailto:nearpura.app@gmail.com">nearpura.app@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 ニアプラ. All rights reserved.</p>
+  </div>
+</body>
+</html>

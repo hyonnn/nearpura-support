@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ニアプラ - サポート</title>
+  <style>
+    :root {
+      --primary-green: #2ebf8c;
+      --primary-teal: #00a6a6;
+      --bg: #f8fafb;
+      --text: #1a1a2e;
+      --text-secondary: #555;
+      --card-bg: #fff;
+      --border: #e0e0e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --text: #e8e8e8;
+        --text-secondary: #aaa;
+        --card-bg: #1a1d28;
+        --border: #2a2d38;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary-green), var(--primary-teal));
+      padding: 48px 24px;
+      text-align: center;
+      color: #fff;
+    }
+    .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .header p { font-size: 1rem; opacity: 0.9; }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+      color: var(--primary-teal);
+    }
+    .card p, .card li {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .card ul { padding-left: 20px; }
+    .card li { margin-bottom: 8px; }
+    a { color: var(--primary-teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.9);
+      font-weight: 500;
+      padding: 8px 16px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+    }
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>ニアプラ</h1>
+    <p>AIで周辺店舗の価格を比較するアプリ</p>
+    <div class="nav-links">
+      <a href="index.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>ニアプラについて</h2>
+      <p>ニアプラ（NearPura）は、AIを活用して周辺店舗の商品価格を比較し、最安値の店舗を案内するiOSアプリです。</p>
+      <ul>
+        <li>地図上で周辺の店舗を選択</li>
+        <li>AIが各店舗のWebサイトから価格情報を収集</li>
+        <li>最安値の店舗と価格を表示</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>よくある質問</h2>
+      <ul>
+        <li><strong>APIキーは必要ですか？</strong><br>はい。価格チェック機能を利用するには、Google Gemini APIキーが必要です。アプリ内の設定画面またはオンボーディングで設定できます。</li>
+        <li><strong>APIキーの取得方法は？</strong><br><a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>にアクセスし、Googleアカウントでログイン後「Get API key」から取得できます。</li>
+        <li><strong>料金はかかりますか？</strong><br>アプリ自体は無料ですが、Google Gemini APIの利用には料金が発生する場合があります。詳細はGoogle AI Studioでご確認ください。</li>
+        <li><strong>価格情報は正確ですか？</strong><br>AIによる価格チェック結果は参考情報です。実際の価格や在庫は店舗でご確認ください。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>アプリに関するご質問やご要望がございましたら、以下のメールアドレスまでお気軽にお問い合わせください。</p>
+      <p style="margin-top: 12px;"><a href="mailto:nearpura.app@gmail.com">nearpura.app@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 ニアプラ. All rights reserved.</p>
+  </div>
+</body>
+</html>
